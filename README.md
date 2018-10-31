@@ -1,4 +1,4 @@
-# Pug Auto Compiler
+# Pug Auto Compiler [Work in Progress]
 ## Visual Studio Code Extension
 
 (Based on TypeScript Auto Compiler by @morissonmaciel)
