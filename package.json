@@ -1,0 +1,62 @@
+{
+	"name": "pug-auto-compiler",
+	"displayName": "Pug Auto Compiler",
+	"description": "Pug auto compiler plugin. Watch for changes in .pug and  run pug command to build them.",
+	"version": "0.1.0",
+	"publisher": "kostasx",
+	"contributors": [
+		"@kostasx"
+	],
+	"keywords": [
+		"pug",
+		"auto",
+		"compiler"
+	],
+	"preview": true,
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"main": "./extension",
+	"activationEvents": [
+		"workspaceContains:**/*.pug"
+	],
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Pug Autocompiler Extension configuration",
+			"properties": {
+				"vscode.pug.compiler.alertOnError": {
+					"type": "string",
+					"default": "always",
+					"description": "Controls when an alert for compiling errors should be display for user. Values: ['always', 'never']"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "pug --pretty ./",
+		"watch": "pug --watch ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"pug": "^2.0.3",
+		"vscode": "^1.1.21",
+		"@types/node": "^10.12.0",
+		"@types/mocha": "^5.2.5"
+	},
+	"repository": {
+		"type": "GitHub",
+		"url": "https://github.com/kostax/vscode-pug-compiler"
+	},
+	"dependencies": {},
+	"__metadata": {
+		"id": "",
+		"publisherId": "",
+		"publisherDisplayName": "Kostas Minaidis"
+	}
+}
