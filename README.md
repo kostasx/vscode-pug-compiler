@@ -19,6 +19,19 @@ External Pug compiler (aka `pug`) must be installed to work properly.
 ```
 npm install -g pug
 ```
+## Installation
+
+* Download repository and unzip it in the VSCode extensions folder:
+
+| OS | VSCode Extensions Directory |
+|---------|----------------------------------|
+| Windows | `%USERPROFILE%\.vscode\extensions` |
+| Mac | `$HOME/.vscode/extensions` |
+| Linux | `$HOME/.vscode/extensions` |
+
+* Reload VSCode
+* Click Save on a file with a .pug extension
+
 ## Extension Settings
 
 ## Release Notes
