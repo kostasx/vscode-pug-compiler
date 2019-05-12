@@ -42,3 +42,9 @@ Initial release of vscode-pug-compiler
  
 
 -----------------------------------------------------------------------------------------------------------
+
+## Screenshots
+
+![](screenshots/pug-watching.jpg)
+
+![](screenshots/pug-compiling.jpg)
